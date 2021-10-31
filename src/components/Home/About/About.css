@@ -1,0 +1,9 @@
+.about{
+    text-align: center;
+    background-image: url('../../../images/about/rsz_1about.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0px;
+    font-weight: bold;
+}

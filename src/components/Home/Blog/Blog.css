@@ -1,0 +1,8 @@
+.single-blog{
+    width: 100%;
+    height: 450px;
+}
+.blog-title{
+    border-bottom: 2px solid yellowgreen;
+    padding-bottom: 15px;
+}
