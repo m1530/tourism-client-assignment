@@ -16,8 +16,8 @@ const Hero = () => {
                         alt="Second slide"
                     />
                     <Carousel.Caption className="bg-dark w-50 mx-auto">
-                        <h5>Operation theatres quality</h5>
-                        <p>provides the most competent and professional treatment critical situation</p>
+                        <h5>2 night 3 days sundharban tour</h5>
+                        <p>Start from BDT 7500 taka only</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -27,8 +27,8 @@ const Hero = () => {
                         alt="Third slide"
                     />
                     <Carousel.Caption className="bg-dark w-50 mx-auto">
-                        <h5>Pharmacy</h5>
-                        <p>We have pharmacy in our hospital. you can buy all any kind of medicine..</p>
+                        <h5>Cox"s bazar-saint martin-cox's  bazar</h5>
+                        <p>2 Days & 1 Night price start 4500 taka per person</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -38,8 +38,8 @@ const Hero = () => {
                         alt="Fourth slide"
                     />
                     <Carousel.Caption className="bg-dark w-50 mx-auto">
-                        <h5>Free Medical Checkup</h5>
-                        <p>We arrange free medical checkup. for more details please contact our help line.</p>
+                        <h5>Rangamati-Khagrachhari</h5>
+                        <p>5 Days & 4 Night price start 7500 taka per person</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -49,8 +49,8 @@ const Hero = () => {
                         alt="First slide"
                     />
                     <Carousel.Caption className="bg-dark w-50 mx-auto">
-                        <h5>Ambulance Service</h5>
-                        <p>We provide 24 hour ambulance services...</p>
+                        <h5>Kuakata (Daughter of the Sea)</h5>
+                        <p>2 Days & 1 Night price start 4500 taka per person</p>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>

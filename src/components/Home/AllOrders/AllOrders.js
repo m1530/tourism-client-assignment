@@ -4,7 +4,7 @@ const AllOrders = () => {
     const [orders, setOrders] = useState([]);
     let i = 1;
     useEffect(() => {
-        const url = `http://localhost:7000/order`;
+        const url = `https://howling-cat-22658.herokuapp.com/order`;
         fetch(url)
             .then(res => res.json())
             .then(data => setOrders(data))
@@ -13,7 +13,7 @@ const AllOrders = () => {
     const handlePackegeDelete = id => {
         const proceed = window.confirm('Are you sure, you want to delete?');
         if (proceed) {
-            const url = `http://localhost:7000/order/${id}`;
+            const url = `https://howling-cat-22658.herokuapp.com/order/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })
@@ -29,7 +29,7 @@ const AllOrders = () => {
     }
     const handleOrderApprove = id => {
         const status = { status: "Approve" };
-        const url = `http://localhost:7000/order/${id}`;
+        const url = `https://howling-cat-22658.herokuapp.com/order/${id}`;
         fetch(url, {
             method: 'PUT',
             headers: {
@@ -41,7 +41,7 @@ const AllOrders = () => {
             .then(data => {
                 if (data.modifiedCount > 0) {
                     alert('Update Successful');
-                    fetch(`http://localhost:7000/order`)
+                    fetch(`https://howling-cat-22658.herokuapp.com/order`)
                         .then(res => res.json())
                         .then(data => setOrders(data))
                 }

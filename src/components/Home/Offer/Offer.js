@@ -26,7 +26,7 @@ const Offer = () => {
 
         const orderData = { name, email, item, price, address, phone, status };
 
-        fetch('http://localhost:7000/order', {
+        fetch('https://howling-cat-22658.herokuapp.com/order', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -45,11 +45,11 @@ const Offer = () => {
 
 
     useEffect(() => {
-        const url = `http://localhost:7000/offer/${offerId}`;
+        const url = `https://howling-cat-22658.herokuapp.com/offer/${offerId}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setOffer(data));
-    }, []);
+    }, [offerId]);
 
     return (
         <div className="text-start container my-5">

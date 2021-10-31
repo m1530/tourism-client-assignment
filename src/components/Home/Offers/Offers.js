@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Offers = () => {
     const [offers, setOffers] = useState([])
     useEffect(() => {
-        fetch('http://localhost:7000/offers')
+        fetch('https://howling-cat-22658.herokuapp.com/offers')
             .then(res => res.json())
             .then(data => setOffers(data));
     }, [])

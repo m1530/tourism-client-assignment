@@ -7,11 +7,11 @@ const Blog = () => {
     const { blogId } = useParams();
 
     useEffect(() => {
-        const url = `http://localhost:7000/blog/${blogId}`;
+        const url = `https://howling-cat-22658.herokuapp.com/blog/${blogId}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setBlog(data));
-    }, []);
+    }, [blogId]);
     return (
         <div className="text-start container my-5">
             <h2 className="my-4 blog-title">{blog.name}</h2>

@@ -6,7 +6,7 @@ const MyOrder = () => {
     let i = 1;
     console.log(myOrder);
     useEffect(() => {
-        const url = `http://localhost:7000/myorders/${email}`;
+        const url = `https://howling-cat-22658.herokuapp.com/myorders/${email}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setMyOrder(data));
@@ -15,7 +15,7 @@ const MyOrder = () => {
     const handlePackegeDelete = id => {
         const proceed = window.confirm('Are you sure, you want to delete?');
         if (proceed) {
-            const url = `http://localhost:7000/order/${id}`;
+            const url = `https://howling-cat-22658.herokuapp.com/order/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

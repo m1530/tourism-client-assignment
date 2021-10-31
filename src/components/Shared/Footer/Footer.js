@@ -77,7 +77,7 @@ const Footer = () => {
                         <div className="text-center">
                             <div className="p-3">
                                 &copy; 2020 Copyright:
-                                Drmoinamiamedical.com
+                                HolidaysTour.com
                             </div>
                         </div>
 

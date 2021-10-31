@@ -26,7 +26,7 @@ const Service = () => {
 
         const orderData = { name, email, item, price, address, phone, status };
 
-        fetch('http://localhost:7000/order', {
+        fetch('https://howling-cat-22658.herokuapp.com/order', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -45,11 +45,11 @@ const Service = () => {
 
 
     useEffect(() => {
-        const url = `http://localhost:7000/service/${serviceId}`;
+        const url = `https://howling-cat-22658.herokuapp.com/service/${serviceId}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setService(data));
-    }, []);
+    }, [serviceId]);
     return (
         <div className="text-start container my-5">
             <div className="row">
