@@ -9,6 +9,7 @@ const Login = () => {
     const history = useHistory();
     //redirect url
     let redirect = location.state?.from || '/';
+    // google signin
     const googleLogIn = () => {
         signInWithGoogle()
             .then((result) => {

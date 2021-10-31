@@ -8,6 +8,7 @@ import logo4 from '../../../images/banner/banner-4.jpg';
 const Hero = () => {
     return (
         <div>
+            {/* hero section using Carousel */}
             <Carousel variant="light">
                 <Carousel.Item>
                     <img

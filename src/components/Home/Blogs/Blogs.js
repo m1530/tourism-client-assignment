@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom';
 import './Blogs.css';
 
 const Blogs = () => {
-    const [blogs, setBlogs] = useState([])
+    const [blogs, setBlogs] = useState([]);
+    // fetch all blog from database
     useEffect(() => {
         fetch('https://howling-cat-22658.herokuapp.com/blogs')
             .then(res => res.json())

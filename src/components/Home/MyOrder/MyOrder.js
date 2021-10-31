@@ -5,6 +5,7 @@ const MyOrder = () => {
     const [myOrder, setMyOrder] = useState([]);
     let i = 1;
     console.log(myOrder);
+    // fetch my order
     useEffect(() => {
         const url = `https://howling-cat-22658.herokuapp.com/myorders/${email}`;
         fetch(url)
@@ -12,6 +13,7 @@ const MyOrder = () => {
             .then(data => setMyOrder(data));
     }, [email]);
 
+    // cancel order
     const handlePackegeDelete = id => {
         const proceed = window.confirm('Are you sure, you want to delete?');
         if (proceed) {

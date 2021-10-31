@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom';
 import './Services.css';
 
 const Services = () => {
-    const [services, setServices] = useState([])
+    const [services, setServices] = useState([]);
+    // fetch all services
     useEffect(() => {
         fetch('https://howling-cat-22658.herokuapp.com/services')
             .then(res => res.json())

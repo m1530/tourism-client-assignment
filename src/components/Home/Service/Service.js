@@ -25,7 +25,7 @@ const Service = () => {
         const status = statusRef.current.value;
 
         const orderData = { name, email, item, price, address, phone, status };
-
+        // submit order
         fetch('https://howling-cat-22658.herokuapp.com/order', {
             method: 'POST',
             headers: {

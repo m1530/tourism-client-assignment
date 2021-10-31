@@ -4,12 +4,13 @@ const AllOrders = () => {
     const [orders, setOrders] = useState([]);
     let i = 1;
     useEffect(() => {
+        // fetch all order from database
         const url = `https://howling-cat-22658.herokuapp.com/order`;
         fetch(url)
             .then(res => res.json())
             .then(data => setOrders(data))
     }, []);
-
+    // delete order 
     const handlePackegeDelete = id => {
         const proceed = window.confirm('Are you sure, you want to delete?');
         if (proceed) {
@@ -27,6 +28,7 @@ const AllOrders = () => {
                 });
         }
     }
+    // update order status
     const handleOrderApprove = id => {
         const status = { status: "Approve" };
         const url = `https://howling-cat-22658.herokuapp.com/order/${id}`;
@@ -53,6 +55,7 @@ const AllOrders = () => {
             <h1 className="text-center my-4">Manage All Orders</h1>
             {
                 <div className="table-responsive">
+                    {/* display all order information in table */}
                     <table className="table">
                         <thead>
                             <tr>

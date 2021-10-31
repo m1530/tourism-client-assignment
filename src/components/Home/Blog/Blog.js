@@ -5,7 +5,7 @@ import './Blog.css';
 const Blog = () => {
     const [blog, setBlog] = useState({});
     const { blogId } = useParams();
-
+    // display single blog information by id
     useEffect(() => {
         const url = `https://howling-cat-22658.herokuapp.com/blog/${blogId}`;
         fetch(url)

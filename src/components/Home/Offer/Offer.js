@@ -26,6 +26,7 @@ const Offer = () => {
 
         const orderData = { name, email, item, price, address, phone, status };
 
+        // submit order in order table
         fetch('https://howling-cat-22658.herokuapp.com/order', {
             method: 'POST',
             headers: {

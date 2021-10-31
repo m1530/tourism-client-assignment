@@ -3,7 +3,8 @@ import { Card, Col, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const Offers = () => {
-    const [offers, setOffers] = useState([])
+    const [offers, setOffers] = useState([]);
+    // display all o0ffers
     useEffect(() => {
         fetch('https://howling-cat-22658.herokuapp.com/offers')
             .then(res => res.json())
