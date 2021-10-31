@@ -19,6 +19,7 @@ import MyOrder from './components/Home/MyOrder/MyOrder';
 import AllOrders from './components/Home/AllOrders/AllOrders';
 import AddNewPackage from './components/Home/AddNewPackage/AddNewPackage';
 import About from './components/Home/About/About';
+import PageNotFound from './components/PageNotFound/PageNotFound';
 
 function App() {
   return (
@@ -65,6 +66,9 @@ function App() {
             </PrivetRoute>
             <Route path="/login">
               <Login />
+            </Route>
+            <Route path="*">
+              <PageNotFound />
             </Route>
           </Switch>
           <Footer />

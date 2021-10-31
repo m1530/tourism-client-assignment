@@ -6,7 +6,7 @@ import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
 
 const Footer = () => {
     return (
-        <div className="mt-4 bg-dark text-white">
+        <div className="navbar-nav text-white">
             <footer className="text-center text-lg-start">
                 <div className="container p-4 pb-0">
                     <section>

@@ -8,7 +8,7 @@ const Header = () => {
     const { users, logOut } = useAuth();
     console.log(users);
     return (
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+        <Navbar collapseOnSelect expand="lg" variant="dark" className="navbar-nav">
             <Container>
                 <Navbar.Brand as={NavLink} to="/">Holidays Tour</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />

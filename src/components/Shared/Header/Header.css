@@ -8,3 +8,6 @@
     color: white;
     cursor: pointer;
 }
+.navbar-nav{
+    background-color: rgb(9, 9, 104);
+}
