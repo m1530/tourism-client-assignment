@@ -22,7 +22,7 @@ const Footer = () => {
                                 <p><FontAwesomeIcon icon={faEnvelope} />&nbsp;&nbsp; moynamia@gmedical.com</p>
                                 <p><FontAwesomeIcon icon={faPhone} />&nbsp;&nbsp; + 01784414217</p>
 
-                                <div className="ml-lg-0 text-start">
+                                <div className="ml-lg-0 text-center text-md-start">
                                     <NavLink to='/login' className="bg-light text-info p-1 rounded m-1">
                                         <FontAwesomeIcon icon={faFacebook} />
                                     </NavLink>

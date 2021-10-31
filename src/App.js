@@ -20,6 +20,8 @@ import AllOrders from './components/Home/AllOrders/AllOrders';
 import AddNewPackage from './components/Home/AddNewPackage/AddNewPackage';
 import About from './components/Home/About/About';
 import PageNotFound from './components/PageNotFound/PageNotFound';
+import AddNewBlog from './components/Home/AddNewBlog/AddNewBlog';
+import AddNewOffer from './components/Home/AddNewOffer/AddNewOffer';
 
 function App() {
   return (
@@ -60,6 +62,12 @@ function App() {
             </PrivetRoute>
             <PrivetRoute path="/createPackage">
               <AddNewPackage />
+            </PrivetRoute>
+            <PrivetRoute path="/addBlog">
+              <AddNewBlog />
+            </PrivetRoute>
+            <PrivetRoute path="/addOffer">
+              <AddNewOffer />
             </PrivetRoute>
             <PrivetRoute path="/manageOrder">
               <AllOrders />

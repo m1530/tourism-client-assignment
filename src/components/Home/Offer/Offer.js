@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useParams } from 'react-router';
+import { NavLink } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 
 const Offer = () => {
@@ -54,8 +55,10 @@ const Offer = () => {
 
     return (
         <div className="text-start container my-5">
+            <NavLink to="/addOffer"><button className="btn btn-sm btn-warning text-center">Add New</button></NavLink>
             <div className="row">
                 <div className="col-md-6">
+                    <h1 className="text-center">Package Information</h1>
                     <h2 className="my-4 blog-title">{offer.name}</h2>
                     <p>{offer.desc}</p>
                     <img className="img-fluid" src={offer.img} alt="" />
