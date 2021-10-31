@@ -1,4 +1,5 @@
 import React from 'react';
+import About from '../About/About';
 import Blogs from '../Blogs/Blogs';
 import Hero from '../Hero/Hero';
 import Offers from '../Offers/Offers';
